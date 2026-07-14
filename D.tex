@@ -1,0 +1,249 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+{\Huge \scshape KARTHIKEYAN S} \\[1pt]
+\small
+\faPhone\ +91~7708580054 \quad
+\faEnvelope\ karthikeyanselvam260906@gmail.com \quad
+\faLinkedin\ \href{https://www.linkedin.com/in/karthikeyan-s-657338291}{karthikeyan-s} \quad
+\faGithub\ \href{https://github.com/karthikeyan261222}{karthikeyan261222}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Chennai Institute of Technology}{Sep 2023 -- May 2027}
+      {Bachelor of Engineering in Computer Science Engineering (AI–ML) \textbf{— CGPA: 8.88}}{Chennai, Tamil Nadu}
+  \resumeSubHeadingListEnd
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {HCL Technologies}{November 2024 -- February 2025}
+    {AI Intern}{Sholinganallur, Chennai (Onsite)}
+    \resumeItemListStart
+      \resumeItem{Worked on \textbf{Godseye}, a unified AI framework with five custom architectures for training, inference, data augmentation, camera input, and logging.}
+      \resumeItem{Improved model accuracy by \textbf{20\%} compared to YOLO11 through architectural optimization and experimentation.}
+      \resumeItem{Built an AI research assistant for intelligent knowledge extraction, semantic search, and structured note organization using Large Language Models (LLMs).}
+      \resumeItem{Hands-on experience with Agentic AI tools including Autogen, Promptflow, Langflow, LangChain, MCP, and CrewAI.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Kanini Software Solutions}{May 2024 -- June 2024}
+    {Data Analyst Intern}{Chennai (Onsite)}
+    \resumeItemListStart
+      \resumeItem{Developed a healthcare call center analytics system using the Whisper model for audio transcription and segmentation.}
+      \resumeItem{Ensured HIPAA compliance while handling sensitive healthcare conversations for quality assurance.}
+      \resumeItem{Performed sentiment analysis to assess call quality and agent performance.}
+      \resumeItem{Created analytical dashboards using Tableau, Power BI, and Python libraries.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-16pt}
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+\vspace{-5pt}
+\resumeSubHeadingListStart
+
+
+\resumeProjectHeading
+    {\textbf{AWS CI/CD Pipeline for Containerized Application} $|$ \emph{AWS CodePipeline, CodeBuild, CodeDeploy, Docker, Flask, EC2}}{}
+\resumeItemListStart
+      \resumeItem{Built and deployed an end-to-end CI/CD pipeline on AWS to automate build, test, and deployment of a containerized Flask application to EC2.}
+      \resumeItem{Automated Docker image build and push workflows, integrating AWS Parameter Store for secure credential and secrets management.}
+      \resumeItem{Configured automated deployment lifecycle hooks for reliable zero-touch container rollout, eliminating manual deployment steps.}
+\resumeItemListEnd
+    \vspace{-17pt}
+
+\resumeProjectHeading
+{\textbf{DevSecOps CI/CD Pipeline} $|$ \emph{GitHub, Jenkins, SonarQube, Docker, Kubernetes (AWS EKS), ArgoCD}}{}
+\resumeItemListStart
+\resumeItem{Built an automated CI/CD pipeline using Jenkins, SonarQube, Docker, and Kubernetes, integrating GitOps deployment via ArgoCD on AWS EKS.}
+\resumeItem{Enforced code quality gates with SonarQube static analysis before builds proceed to deployment.}
+\resumeItem{Integrated security scanning and monitoring using Trivy, Prometheus, and Grafana, reducing manual intervention across the pipeline.}
+\resumeItemListEnd
+\vspace{-17pt}
+\resumeProjectHeading
+    {\textbf{Terraform EKS Infrastructure Automation} $|$ \emph{Terraform, AWS EKS, VPC, Kubernetes, IAM}}{}
+    \resumeItemListStart
+      \resumeItem{Provisioned a production-style Amazon EKS cluster and multi-AZ VPC using Terraform, fully automating networking, security groups, and node groups as Infrastructure as Code.}
+      \resumeItem{Configured IRSA (IAM Roles for Service Accounts) to enforce least-privilege, pod-level AWS permissions instead of broad node-level IAM roles.}
+      \resumeItem{Designed auto-scaling worker node groups and public/private subnet architecture with proper Kubernetes load balancer subnet tagging.}
+    \resumeItemListEnd
+    \vspace{-16pt}
+
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\small{
+
+\textbf{Agentic AI \& LLM Tools:} Autogen, Promptflow, Langflow, LangChain, CrewAI, MCP \\
+\textbf{Analytics \& Visualization:} Tableau, Power BI, Python Libraries \\
+\textbf{Programming Languages:} Python and Java\\
+\textbf{DevOps \& Cloud:} Git/GitHub, Linux, AWS, Jenkins, Docker, Terraform, Ansible, Prometheus, Grafana \\
+
+}
+\vspace{-10pt}
+
+%------RELEVANT COURSEWORK-------
+\section{Certifications}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{3}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item\small AWS Solutions Architect(SAA-C03)
+                \item AWS Cloud Practitioner(CLF-C02)
+                \item Data Analysis and Visualisation
+                \item Data Analysis with Python
+                \item IBM - Cloud computing
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+%-----------INVOLVEMENT---------------
+\section{Achievements \& Hackathons}
+\vspace{2pt}
+\begin{itemize}[leftmargin=0.15in, itemsep=2pt, topsep=0pt]
+\small{
+    \item \textbf{2× AWS Certified – SAA-C03 and CLF-C02 Certified Professional}
+    
+    \item \textbf{Intel OneAPI Hackathon – Finalist}
+}
+\end{itemize}
+\vspace{-19pt}
+
+
+
+\end{document}
